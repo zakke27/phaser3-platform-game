@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="14" height="7" tilewidth="64" tileheight="64" infinite="0" nextlayerid="3" nextobjectid="5">
+ <editorsettings>
+  <export target="level1.json" format="json"/>
+ </editorsettings>
+ <tileset firstgid="1" name="assets" tilewidth="64" tileheight="64" tilecount="98" columns="14">
+  <image source="../tilesets/assets.png" width="896" height="448"/>
+ </tileset>
+ <layer id="1" name="Ground" width="14" height="7">
+  <data encoding="base64">
+   AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABLAAAASwAAAEsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAA=
+  </data>
+ </layer>
+ <objectgroup id="2" name="Splike">
+  <object id="1" gid="71" x="192.149" y="254.91" width="64" height="64"/>
+  <object id="2" gid="71" x="448.495" y="64.1981" width="64" height="64"/>
+  <object id="4" gid="71" x="673.882" y="254.91" width="64" height="64"/>
+ </objectgroup>
+</map>
