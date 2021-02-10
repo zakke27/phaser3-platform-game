@@ -1,7 +1,7 @@
 {
 	"name": "phaser3-parcel-template",
 	"version": "1.0.0",
-	"description": "A template project for Phaser3 using Parceljs",
+	"description": "A template project for Phaser 3 using Parceljs",
 	"scripts": {
 		"start": "parcel src/index.html -p 8000",
 		"build": "parcel build src/index.html --out-dir dist",
@@ -15,8 +15,9 @@
 	},
 	"homepage": "https://github.com/ourcade/phaser3-parcel-template",
 	"devDependencies": {
-		"@babel/core": "^7.10.5",
+		"@babel/core": "^7.12.13",
 		"@babel/plugin-proposal-class-properties": "^7.10.4",
+		"@babel/plugin-transform-runtime": "^7.12.15",
 		"babel-eslint": "^10.1.0",
 		"eslint": "^6.8.0",
 		"minimist": ">=1.2.2",
@@ -24,7 +25,8 @@
 		"parcel-plugin-static-files-copy": "^2.4.3"
 	},
 	"dependencies": {
-		"phaser": "^3.24.1"
+		"@babel/runtime": "^7.12.13",
+		"phaser": "^3.50.1"
 	},
 	"parcelCleanPaths": [
 		"dist"

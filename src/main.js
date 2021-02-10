@@ -1,25 +1,24 @@
 import Phaser from 'phaser'
 
-import TestScene from './scenes/TestScene'
 import GameScene from './scenes/GameScene'
-import HelloWorldScene from './scenes/HelloWorldScene'
 
 const config = {
 	type: Phaser.AUTO,
-	width: 800,
+	width: 1280,
 	height: 640,
-	// scale: {
-	// 	mode: Phaser.Scale.RESIZE,
-	// 	autoCenter: Phaser.Scale.CENTER_BOTH
-	// },
+	backgroundColor: 'rgb(183,231,250)',
+	scale: {
+		autoCenter: Phaser.Scale.CENTER_BOTH
+	},
 	physics: {
 		default: 'arcade',
 		arcade: {
-			gravity: { y: 500 },
-			debug: false,
-		},
+			gravity: { y: 300 },
+			debug: true,
+		}
 	},
-	scene: [TestScene, GameScene, HelloWorldScene]
+	pixelArt: true,
+	scene: [GameScene]
 }
 
 export default new Phaser.Game(config)
