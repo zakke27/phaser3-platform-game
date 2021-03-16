@@ -39,7 +39,7 @@ export default class GameScene extends Phaser.Scene {
     this.map = this.make.tilemap({ key: 'map' })
     // console.log(map);
     // create text
-    this.add.text(100, -30, 'W 向左移动, D 向右移动      J 攻击, K 跳跃, S 滑行').setColor('black').setFontSize(20).setFontFamily('微软雅黑')
+    this.add.text(100, -30, 'W 向左移动, D 向右移动      J 攻击, K 跳跃, L 滑行').setColor('black').setFontSize(20).setFontFamily('微软雅黑')
 
     /*  addTilesetImage第一个参数是我们制作地图的时候选择图块时给图块起的名称，
         第二个参数是我们已经加载的图块图片 */
@@ -88,11 +88,11 @@ export default class GameScene extends Phaser.Scene {
       this.gem.setCollisionByExclusion([-1], false)
       this.gem.visible = false
       // console.log(this.gem);
-      this.isGameOver = true
+      this.isGameOver = !this.isGameOver
     })
 
     // 键盘控制器
-    this.cursors = this.input.keyboard.addKeys('K,S,A,D,J') // 设定按键
+    this.cursors = this.input.keyboard.addKeys('K,L,A,D,J') // 设定按键
     this.isIdle = true
   }
 
@@ -127,7 +127,7 @@ export default class GameScene extends Phaser.Scene {
       this.player.anims.play('idle', true)
     }
 
-    if (this.cursors['S'].isDown && this.player.body.blocked.down) {
+    if (this.cursors['L'].isDown && this.player.body.blocked.down) {
       this.isIdle = false
       this.player.body.velocity.x = this.player.flipX ? -140 : 140
       this.player.anims.play('slide', true)
@@ -175,6 +175,7 @@ export default class GameScene extends Phaser.Scene {
 
     // 游戏结束重新开始
     if (this.isGameOver) {
+      this.isGameOver = !this.isGameOver
       this.scene.restart()
     }
   }
