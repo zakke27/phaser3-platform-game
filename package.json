@@ -20,7 +20,7 @@
 		"@babel/plugin-transform-runtime": "^7.12.15",
 		"babel-eslint": "^10.1.0",
 		"eslint": "^6.8.0",
-		"minimist": ">=1.2.2",
+		"minimist": ">=1.2.6",
 		"parcel-plugin-clean-easy": "^1.0.2",
 		"parcel-plugin-static-files-copy": "^2.4.3"
 	},
